@@ -1,11 +1,10 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Login</ion-title>
+    <ion-title>Register</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <img src='assets/imgs/logo.png' alt='logo' />
   <ion-card>
     <ion-card-content>
       <ion-item>
@@ -17,10 +16,7 @@
         <ion-input type='password'></ion-input>
       </ion-item>
       <ion-row>
-        <div>
-          <button ion-button (click)='navigateToPage("RegisterPage")' color='secondary'>Register</button>
-          <button ion-button>Login</button>
-        </div>
+        <button ion-button (click)='register()'>Register</button>
       </ion-row>
     </ion-card-content>
   </ion-card>
