@@ -6,12 +6,12 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item>
+    <ion-item *ngFor='let message of messageList'>
       <ion-avatar item-left>
-        <img src='assets/imgs/avatar.png' alt='Avatar' />
+        <img [src]='message.user.avatar' alt='Avatar' />
       </ion-avatar>
-      <h2>Jack Neligan</h2>
-      <p>I've just loaded a new video</p>
+      <h2>{{message.user.firstName}} {{message.user.lastName}}</h2>
+      <p>{{message.lastMessage}}</p>
     </ion-item>
   </ion-list>
 </ion-content>
