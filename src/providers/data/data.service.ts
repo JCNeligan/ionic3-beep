@@ -10,6 +10,11 @@ export class DataService {
 
   constructor(private database: AngularFireDatabase) {}
 
+  getProfile(user:User) {
+    this.profileObject = this.database.object(`/profiles/${user.uid}`);
+    return this.profileObject;
+  }
+
   async saveProfile(user:User, profile:Profile) {
     this.profileObject = this.database.object(`/profiles/${user.uid}`);
     try {

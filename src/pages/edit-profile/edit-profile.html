@@ -5,5 +5,5 @@
 </ion-header>
 
 <ion-content padding>
-  <app-edit-profile-form></app-edit-profile-form>
+  <app-edit-profile-form (saveProfileResult)='saveProfileResult($event)' ></app-edit-profile-form>
 </ion-content>
