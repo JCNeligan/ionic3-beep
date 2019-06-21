@@ -16,7 +16,7 @@ export class MyApp {
               private auth: AuthService) {
 
     this.auth.getAuthenticatedUser().subscribe(auth => {
-      !auth ? this.rootPage = 'LoginPage' : this.rootPage='TabsPage';
+      !auth ? this.rootPage = 'LoginPage' : this.rootPage='MessagePage';
     })
 
     platform.ready().then(() => {
